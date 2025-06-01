@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[YOUR NAME] - Portfolio</title>
+    <style>
+        /* Basic Reset & Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        /* Header */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            color: #007bff;
+            font-size: 2.5em;
+        }
+
+        header p {
+            margin: 5px 0 0;
+            font-size: 1.2em;
+            color: #555;
+        }
+
+        /* Section Styling */
+        section {
+            margin-bottom: 40px;
+        }
+
+        section h2 {
+            color: #007bff;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        /* About Section */
+        .about p {
+            text-align: justify;
+        }
+
+        .skills-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center; /* Center skills */
+        }
+
+        .skills-list li {
+            background-color: #e9e9e9;
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        /* Portfolio Grid */
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid */
+            gap: 25px;
+        }
+
+        .project-item {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .project-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-item img {
+            max-width: 100%;
+            height: 200px; /* Fixed height for consistency */
+            object-fit: cover; /* Ensures images fill space without distortion */
+            display: block;
+            border-bottom: 1px solid #eee;
+        }
+
+        .project-item h3 {
+            color: #007bff;
+            margin: 15px 0 5px;
+            font-size: 1.3em;
+        }
+
+        .project-item p {
+            padding: 0 15px 15px;
+            margin: 0;
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        /* Services List */
+        .services-list {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+        }
+
+        .services-list li {
+            background-color: #eef7ff;
+            padding: 15px;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        /* Contact Section */
+        .contact p {
+            text-align: center;
+            font-size: 1.1em;
+        }
+
+        .contact a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9em;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            header p {
+                font-size: 1em;
+            }
+
+            section h2 {
+                font-size: 1.5em;
+            }
+
+            .portfolio-grid {
+                grid-template-columns: 1fr; /* Stack on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>[YOUR FULL NAME]</h1>
+            <p>Architectural Visualization & 3D Specialist | Python & AR Developer | IT Support</p>
+        </header>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>
+                As a passionate and versatile professional, I'm currently pursuing my Bachelor of Science degree, set to graduate in 2025. I bring a fresh perspective and a strong command of industry-leading software and programming languages to every project. My goal is to bridge the gap between design, technology, and practical application.
+            </p>
+            <p>
+                I am adept at creating visually stunning 3D content, developing robust software solutions, and ensuring seamless technological operations. I thrive on challenging projects that demand creativity, technical precision, and innovative problem-solving.
+            </p>
+            <h3>My Key Skills:</h3>
+            <ul class="skills-list">
+                <li>Revit</li>
+                <li>Lumion</li>
+                <li>AutoCAD</li>
+                <li>3ds Max</li>
+                <li>Blender</li>
+                <li>Architectural Visualization</li>
+                <li>3D Modeling & Rendering</li>
+                <li>Python Programming</li>
+                <li>Augmented Reality (AR)</li>
+                <li>HTML & Web Design</li>
+                <li>IT Support & Troubleshooting</li>
+            </ul>
+        </section>
+
+        <section id="portfolio" class="portfolio">
+            <h2>My Portfolio & Projects</h2>
+            <p>Here are some examples of my work, demonstrating my capabilities in 3D visualization, modeling, and programming. **(Replace these with your actual project images and descriptions!)**</p>
+            <div class="portfolio-grid">
+                <!-- Project 1: Architectural Exterior Render -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=Architectural+Render+1" alt="Architectural Exterior Render">
+                    <h3>Modern Villa Exterior</h3>
+                    <p>A photorealistic render of a modern villa exterior, showcasing detailed landscaping and material finishes. Created using Revit for modeling and Lumion for rendering.</p>
+                </div>
+
+                <!-- Project 2: Interior Design Visualization -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=Interior+Visualization+2" alt="Interior Design Visualization">
+                    <h3>Cozy Living Room Interior</h3>
+                    <p>Interior visualization of a living space, highlighting lighting, textures, and furniture arrangement. Modeled in 3ds Max and rendered with V-Ray/Lumion.</p>
+                </div>
+
+                <!-- Project 3: 3D Product Model -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=Product+Model+3" alt="3D Product Model">
+                    <h3>Ergonomic Chair Product Render</h3>
+                    <p>Detailed 3D model and render of an ergonomic office chair for product visualization. Created entirely in Blender, focusing on realistic materials.</p>
+                </div>
+
+                <!-- Project 4: AutoCAD Drafting -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=AutoCAD+Drawing+4" alt="AutoCAD Drafting">
+                    <h3>Commercial Building Floor Plan</h3>
+                    <p>Precise 2D floor plan drafting for a commercial building, adhering to industry standards. Produced using AutoCAD.</p>
+                </div>
+
+                 <!-- Project 5: Python Scripting Example (Screenshot/Diagram) -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=Python+Script+5" alt="Python Scripting Example">
+                    <h3>Automated Data Extraction Script (Python)</h3>
+                    <p>A Python script developed to automate data extraction from various document formats, improving efficiency in data processing workflows. (You can link to GitHub Gist for code snippet)</p>
+                </div>
+
+                <!-- Project 6: AR Concept / Demo (Screenshot/Video link) -->
+                <div class="project-item">
+                    <img src="https://via.placeholder.com/400x200?text=AR+Concept+6" alt="Augmented Reality Concept">
+                    <h3>Interactive AR Furniture Placement App Concept</h3>
+                    <p>Concept visualization and basic prototype for an Augmented Reality application allowing users to virtually place furniture in their space. (You can link to a short demo video)</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="services" class="services">
+            <h2>Services I Offer</h2>
+            <ul class="services-list">
+                <li>Photorealistic Architectural Renderings (Interior & Exterior)</li>
+                <li>3D Modeling for Architecture, Products & Assets</li>
+                <li>BIM (Building Information Modeling) Services with Revit</li>
+                <li>CAD Drafting, Conversion & Cleanup</li>
+                <li>Python Scripting & Automation</li>
+                <li>Augmented Reality (AR) Content & App Development</li>
+                <li>Custom HTML/CSS Web Page Development</li>
+                <li>Remote IT Support & Technical Troubleshooting</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Let's Connect!</h2>
+            <p>I'm available for freelance projects and collaborations. Feel free to reach out to discuss your needs.</p>
+            <p>Email: <a href="mailto:YOUR_EMAIL@EXAMPLE.COM">YOUR_EMAIL@EXAMPLE.COM</a></p>
+            <p>LinkedIn: <a href="YOUR_LINKEDIN_PROFILE_URL" target="_blank">linkedin.com/in/YOUR_PROFILE</a></p>
+            <p>GitHub: <a href="YOUR_GITHUB_PROFILE_URL" target="_blank">github.com/YOUR_USERNAME</a> (for programming projects)</p>
+        </section>
+
+        <footer>
+            <p>© <script>document.write(new Date().getFullYear());</script> [YOUR FULL NAME]. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
